@@ -1,4 +1,4 @@
-# Fetch Rewards #
+# Fetch Rewards - Ruben T. Salcedo #
 ## Data Engineering Take Home: ETL off a SQS Qeueue ##
 
 The language that I have used to perform this project was Python3 using VS Code as my IDE in addition to the project setup resources.
