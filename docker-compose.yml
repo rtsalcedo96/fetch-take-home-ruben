@@ -15,9 +15,9 @@ services:
     volumes:
       - "${TMPDIR:-/tmp}/localstack:/tmp/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
-      - ${PWD}/data/sample_data.json.gz:/tmp/data/sample_data.json.gz
-      - ${PWD}/scripts/create_and_write_to_queue.py:/tmp/scripts/create_and_write_to_queue.py
-      - ${PWD}/scripts/01_call_python_scripts.sh:/docker-entrypoint-initaws.d/01_call_python_scripts.sh
+      - C:\Users\ruben\pythonproj\data-engineering-take-home\data\sample_data.json.gz:/tmp/data/sample_data.json.gz
+      - C:\Users\ruben\pythonproj\data-engineering-take-home\scripts\create_and_write_to_queue.py:/tmp/scripts/create_and_write_to_queue.py
+      - C:\Users\ruben\pythonproj\data-engineering-take-home\scripts\01_call_python_scripts.sh:/docker-entrypoint-initaws.d/01_call_python_scripts.sh
   postgres:
     image: postgres:10
     environment:
@@ -25,8 +25,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
-      - 5432:5432
+      - 54321:5432
     expose:
       - 5432
     volumes:
-      - ${PWD}/scripts/create_table.sql:/docker-entrypoint-initdb.d/create_table.sql
+      - C:\Users\ruben\pythonproj\data-engineering-take-home\scripts\create_table.sql:/docker-entrypoint-initdb.d/create_table.sql
