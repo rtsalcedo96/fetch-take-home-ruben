@@ -68,7 +68,7 @@ You will have to make a number of decisions as you develop this solution:
     * password = `postgres`
 
 
-** NOTE: if you have a localhost software already mapped to the 5432 port, you made need to change port mappings to account for this! In my case PgAdmin4 was conflicting with my project localhost 5432 connection, so I changed my mapping to 54321:5432**
+** NOTE: If you have a localhost software already mapped to the 5432 port, you may need to change port mappings to account for this! In my case PgAdmin4 was conflicting with my project localhost 5432 connection, so I changed my mapping to 54321:5432**
 
 ```bash
 # password: postgres
