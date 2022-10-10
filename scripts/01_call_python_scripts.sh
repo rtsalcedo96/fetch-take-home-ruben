@@ -1,5 +1,4 @@
 #!/bin/sh
-
 echo "downloding localstack dependency"
 pip install localstack-client
 
