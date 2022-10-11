@@ -1,7 +1,7 @@
 # Fetch Rewards - Ruben T. Salcedo #
 ## Data Engineering Take Home: ETL off a SQS Qeueue ##
 
-The language that I have used to perform this project was Python3 using VS Code as my IDE in addition to the project setup resources.
+The language that I have used to perform this project was Python3 using VS Code as my IDE in addition to the project setup resources. The solution to my project is listed in main.py. I have included a supplemental "Decrypt.py" which includes a block of code that can be added to main.py to double check decryption for the PIIs. I have also included a .png named ETLsuccess! which shows an example of what it looks like when the code runs successfully.
 
 ## Project set-up troubleshooting write-up (Windows10-OS)
 My journey started with trying to run the docker container but I was almost immediately blocked because the docker logs were saying that I was running into some issues regarding an ./r command and I realized the docker container was not able to execute the script command on initialization. When I ran the awslocal test command included in the project setup instructions, the terminal was responding that a queue did not exist, when I knew for a fact and could prove visually that that container was up and running in docker desktop. My belief that the container was empty was reinforced when I ran “awslocal sqs list-queues” and nothing came back.
