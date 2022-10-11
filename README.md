@@ -17,6 +17,8 @@ With more time for this project, I would seek to optimize my code in such a way 
 
 Additionally, I would seek to include documentation for steps towards daily table maintenance as well as daily monitoring of the ETL pipeline using diagnostic queries. This would ensure there are protocols in place to mitigate table degradation from data updates/deletes and resolve errors that may arise during long term use.
 
+
+## Project set-up instructions
 Note the target table's DDL is:
 
 ```sql
